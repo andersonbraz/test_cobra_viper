@@ -9,7 +9,7 @@ import (
 
 func main() {
 	var cmd = &cobra.Command{
-		Use:   "viper-test",
+		Use:   "simple",
 		Short: "testing viper",
 		Run: func(command *cobra.Command, args []string) {
 			fmt.Printf("thing1: %q\n", viper.GetString("thing1"))
